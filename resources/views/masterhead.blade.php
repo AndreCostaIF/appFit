@@ -21,7 +21,8 @@
     <span>
         <i class="bi bi-app-indicator"></i> AppFit
     </span>
-    <img src="{{ asset('assets/status.svg') }}" width="200" height="100" alt="">
+    <img src="{{ asset(
+        isset($image) ? $image  : 'assets/status.svg') }}" width="200" height="100" alt="">
 </div>
 
 <body class="antialiased bg-light">

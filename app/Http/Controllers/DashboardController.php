@@ -9,7 +9,9 @@ class DashboardController extends Controller
 
     public function index(){
 
-        return view('dashboard');
+        $data['image'] = 'assets/status.svg';
+
+        return view('dashboard', $data);
 
     }
 }

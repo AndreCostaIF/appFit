@@ -10,13 +10,12 @@
         />
 
         <x-botao-menu-mobile titulo='Água' icon='bi bi-droplet-half'
-            link="{{ route('login') }}" :active="request()->routeIs('login')"
+            link="{{ route('agua') }}" :active="request()->routeIs('agua')"
         />
 
-        <x-botao-menu-mobile titulo='Opções' icon='bi bi-gear'
+        <x-botao-menu-mobile titulo='Perfil' icon='bi bi-person-bounding-box'
             link="{{ route('login') }}" :active="request()->routeIs('login')"
         />
-
 
     </div>
 </div>

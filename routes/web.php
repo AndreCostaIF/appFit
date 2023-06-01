@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AguaController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,8 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',  [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/agua',  [AguaController::class, 'index'])->middleware(['auth'])->name('agua');
 
 require __DIR__.'/auth.php';
